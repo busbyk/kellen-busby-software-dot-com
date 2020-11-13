@@ -10,14 +10,13 @@ export default () => (
           siteMetadata {
             title
             author
-            imageUrl
             description
             keywords
           }
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Helmet>
         <meta
           name="viewport"
@@ -33,7 +32,7 @@ export default () => (
           itemprop="description"
           content={data.site.siteMetadata.description}
         />
-        <meta itemprop="image" content={data.site.siteMetadata.imageUrl} />
+        {/* <meta itemprop="image" content={data.site.siteMetadata.imageUrl} /> */}
       </Helmet>
     )}
   />

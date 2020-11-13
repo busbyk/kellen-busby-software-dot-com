@@ -4,6 +4,7 @@ module.exports = {
     author: "Kellen Busby",
     description: "Business website for Kellen Busby Software LLC.",
     siteUrl: "http://www.kellenbusbysoftware.com",
+    keywords: ''
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -38,5 +39,5 @@ module.exports = {
         anonymize: true,
       },
     },
-  ],
+    `gatsby-plugin-sitemap`
 };
