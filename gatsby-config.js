@@ -2,9 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Kellen Busby Software",
     author: "Kellen Busby",
-    imageUrl: "",
     description: "Business website for Kellen Busby Software LLC.",
-    keywords: ``,
+    siteUrl: "http://www.kellenbusbysoftware.com",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
