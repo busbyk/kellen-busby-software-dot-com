@@ -1,29 +1,58 @@
-// Importing variables
 @import './variables.scss';
-
-// Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
 .gradientBg {
-	display: flex;
-	background: linear-gradient(to right, $primary-color, $secondary-color);
+  display: flex;
+  background: linear-gradient(to right, $primary-color, $secondary-color);
 }
 
 .center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
-	display: flex;
-	padding: 1.5rem 1.5rem;
-	line-height: 1.5rem;
-	a {
-		border-bottom: 1px solid;
-		color: black;
-	}
-	a:hover {
-		color: $secondary-color;
-	}
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5rem;
+  a {
+    border-bottom: 1px solid;
+    color: black;
+  }
+  a:hover {
+    color: $secondary-color;
+  }
+}
+
+#typing {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: -0.1rem;
+}
+
+#typing .huge {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.work-phrase::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: hotpink;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.emphasized-work-phrase {
+  background-image: linear-gradient(120deg, #264bf3 0%, #3135ec 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
 }

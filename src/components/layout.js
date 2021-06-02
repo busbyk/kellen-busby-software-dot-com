@@ -1,14 +1,15 @@
-import React from "react";
-
-import "./style.scss";
-import Helmet from "./helmet";
-import Header from "./header";
+import React from 'react'
+import './style.scss'
+import './Typist.css'
+import Helmet from './helmet'
+import Navbar from './navbar'
 
 const Layout = ({ children }) => (
   <div>
     <Helmet />
-    <Header />
+    <Navbar />
+    {children}
   </div>
-);
+)
 
-export default Layout;
+export default Layout
