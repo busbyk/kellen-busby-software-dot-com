@@ -1,7 +1,11 @@
-$primary-color: #2980b9;
-$secondary-color: #6dd5fa;
+$primary-color: #0d4394;
+$secondary-color: #087da8;
 
 @import '~@fontsource/inconsolata/index.css';
+@import '~@fontsource/cousine/index.css';
+@import '~@fontsource/raleway/index.css';
+@import '~@fontsource/wendy-one/index.css';
+@import '~@fontsource/work-sans/index.css';
 
-$family-sans-serif: 'Inconsolata', serif;
+$family-sans-serif: 'Work Sans', sans-serif;
 $family-primary: $family-sans-serif;

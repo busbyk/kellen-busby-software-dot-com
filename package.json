@@ -4,7 +4,11 @@
   "version": "1.10.3",
   "author": "Kellen Busby <kellenbusby@gmail.com>",
   "dependencies": {
+    "@fontsource/cousine": "^4.4.2",
     "@fontsource/inconsolata": "^4.4.2",
+    "@fontsource/raleway": "^4.4.2",
+    "@fontsource/wendy-one": "^4.4.2",
+    "@fontsource/work-sans": "^4.4.2",
     "bulma": "^0.9.2",
     "gatsby": "^2.24.2",
     "gatsby-image": "^2.4.13",

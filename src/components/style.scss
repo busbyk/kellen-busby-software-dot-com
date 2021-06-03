@@ -25,15 +25,14 @@
   }
 }
 
-#typing {
-  font-size: 60px;
+#welcome {
+  font-size: 2.5rem;
   font-weight: bold;
   color: white;
-  letter-spacing: -0.1rem;
 }
 
-#typing .huge {
-  font-size: 100px;
+#welcome .huge {
+  font-size: 5rem;
   font-weight: bold;
 }
 
@@ -50,9 +49,75 @@
 }
 
 .emphasized-work-phrase {
-  background-image: linear-gradient(120deg, #264bf3 0%, #3135ec 100%);
+  background-image: linear-gradient(120deg, #3dc25a 0%, #5b06aa 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
+}
+
+.is-vh-height {
+  height: 100vh;
+}
+
+.slide-in-btns-row a:last-child {
+  margin-left: 10px;
+}
+
+.slide-in-btn {
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeInOver 1s ease forwards;
+}
+
+.slide-in-btn:first-child {
+  transform: translateX(-3rem);
+}
+
+.slide-in-btn:last-child {
+  transform: translateX(-5rem);
+}
+
+.cta-btn-row {
+  margin-top: 20px;
+}
+
+.cta-btn {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  font-weight: bold;
+  transform: translateY(3rem);
+}
+
+@keyframes fadeInOver {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.work-phrases-row {
+  margin-top: 100px;
+}
+
+.hi-im {
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 460px) {
+  #welcome {
+    font-size: 1.5rem;
+  }
+
+  #welcome .huge {
+    font-size: 2.9rem;
+  }
 }
