@@ -12,7 +12,7 @@ const Welcome = () => {
         <div className='container'>
           <div id='bio-container'>
             <div className='is-flex is-align-items-center'>
-              <div className='mr-4'>
+              <div className='mr-4 is-flex-shrink-0'>
                 <img className='profile-img' src={profileImg} alt='' />
 
               </div>
