@@ -1,11 +1,7 @@
-$primary-color: #0d4394;
-$secondary-color: #087da8;
+$primary: #0d4394;
+$link: #F9F871;
 
-@import '~@fontsource/inconsolata/index.css';
-@import '~@fontsource/cousine/index.css';
-@import '~@fontsource/raleway/index.css';
-@import '~@fontsource/wendy-one/index.css';
-@import '~@fontsource/work-sans/index.css';
+@import '~@fontsource/nunito/index.css';
 
-$family-sans-serif: 'Work Sans', sans-serif;
+$family-sans-serif: 'Nunito', sans-serif;
 $family-primary: $family-sans-serif;

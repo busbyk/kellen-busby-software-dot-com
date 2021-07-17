@@ -3,7 +3,7 @@
 
 .gradientBg {
   display: flex;
-  background: linear-gradient(to right, $primary-color, $secondary-color);
+  background-image: linear-gradient(to right bottom, #056293, #006e9d, #007aa6, #0087ae, #0093b5, #00a2bb, #00b1bd, #00c0bc, #43d3ae, #7de499, #b9f081, #f9f871);
 }
 
 .center {
@@ -21,19 +21,25 @@
     color: black;
   }
   a:hover {
-    color: $secondary-color;
+    color: $link;
   }
 }
 
-#welcome {
-  font-size: 2.5rem;
-  font-weight: bold;
+.container {
   color: white;
 }
 
-#welcome .huge {
-  font-size: 5rem;
-  font-weight: bold;
+#bio-container {
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  box-shadow: 0px ​0px 35px -10px #ccc;
+  -webkit-box-shadow: 0px ​0px 35px -10px #ccc;
+  -moz-box-shadow: 0px ​0px 35px -10px #ccc;
 }
 
 .work-phrase::after {
@@ -104,20 +110,10 @@
 }
 
 .work-phrases-row {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .hi-im {
   line-height: 1.2;
   margin-bottom: 10px;
-}
-
-@media (max-width: 460px) {
-  #welcome {
-    font-size: 1.5rem;
-  }
-
-  #welcome .huge {
-    font-size: 2.9rem;
-  }
 }
