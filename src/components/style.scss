@@ -1,9 +1,28 @@
 @import './variables.scss';
 @import '~bulma/bulma.sass';
 
+body,
+html {
+  font-display: block;
+}
+
 .gradientBg {
   display: flex;
-  background-image: linear-gradient(to right bottom, #056293, #006e9d, #007aa6, #0087ae, #0093b5, #00a2bb, #00b1bd, #00c0bc, #43d3ae, #7de499, #b9f081, #f9f871);
+  background-image: linear-gradient(
+    to right bottom,
+    #056293,
+    #006e9d,
+    #007aa6,
+    #0087ae,
+    #0093b5,
+    #00a2bb,
+    #00b1bd,
+    #00c0bc,
+    #43d3ae,
+    #7de499,
+    #b9f081,
+    #f9f871
+  );
 }
 
 .center {
