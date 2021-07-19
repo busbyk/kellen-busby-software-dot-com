@@ -1,7 +1,9 @@
 $primary: #0d4394;
-$link: #F9F871;
+$link: #f9f871;
 
-@import '~@fontsource/nunito/index.css';
+@import '~@fontsource/nunito/400.css';
+@import '~@fontsource/nunito/600.css';
+@import '~@fontsource/nunito/800.css';
 
 $family-sans-serif: 'Nunito', sans-serif;
 $family-primary: $family-sans-serif;

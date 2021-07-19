@@ -24,7 +24,7 @@ const Welcome = () => {
           </div>
           <div className='slide-in-btns-row'>
             <a
-              className='button is-link slide-in-btn is-size-7-mobile'
+              className='button is-link slide-in-btn is-size-7-mobile is-small'
               href='https://github.com/busbyk'
               target='_blank'
             >
@@ -34,7 +34,7 @@ const Welcome = () => {
               <span>busbyk</span>
             </a>
             <a
-              className='button is-link slide-in-btn is-size-7-mobile'
+              className='button is-link slide-in-btn is-size-7-mobile is-small'
               href='mailto:kellenbusby@gmail.com'
             >
               <span className='icon'>
@@ -53,35 +53,35 @@ const Welcome = () => {
 }
 
 const ThingsIBuild = (props) => {
-  const { onTypingDone } = props
   const workPhrases = [
     'React apps',
-    'web scrapers',
+    'Web scrapers',
     'APIs',
     'React Native apps',
     'API integrations',
     'Python scripts',
-    'automation software',
+    'Automation software',
     'Gatsby websites',
-    'whatever you need',
+    'Whatever you need',
   ]
 
   return (
     <div className='work-phrases-row'>
       <p className='is-size-4'>What I build: </p>
-      <Typist onTypingDone={onTypingDone}>
+      <Typist>
+        <Typist.Delay ms={1000} />
         {workPhrases.map((phrase, idx) => (
-          <span
-            className={
-              idx === workPhrases.length - 1 ? 'emphasized-work-phrase' : ''
-            }
-            key={idx}
-          >
-            {phrase}
-            <Typist.Backspace
-              count={idx < workPhrases.length - 1 ? phrase.length : 0}
-              delay={1500}
-            />
+          <span>
+            <span
+              className={
+                idx === workPhrases.length - 1 ? 'emphasized-work-phrase' : ''
+              }
+              key={idx}
+            >
+              {phrase}
+            </span>
+            <Typist.Delay ms={1000} />
+            <br />
           </span>
         ))}
       </Typist>
