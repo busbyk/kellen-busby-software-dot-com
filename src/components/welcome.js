@@ -1,8 +1,9 @@
 import React from 'react'
 import Typist from 'react-typist'
-import { FaGithub } from 'react-icons/fa'
-import { RiMailSendFill } from 'react-icons/ri'
+import {FaGithub, FaFileDownload} from 'react-icons/fa'
+import {RiMailSendFill} from 'react-icons/ri'
 import profileImg from '../images/profile_1.jpg'
+import resume from '../../static/Kellen Busby Resume.pdf'
 
 const Welcome = () => {
   return (
@@ -27,11 +28,22 @@ const Welcome = () => {
               className='button is-link slide-in-btn is-size-7-mobile is-small'
               href='https://github.com/busbyk'
               target='_blank'
+              rel='noreferrer'
             >
               <span className='icon'>
                 <FaGithub size='fa-2x' />
               </span>
               <span>busbyk</span>
+            </a>
+            <a
+              className='button is-link slide-in-btn is-size-7-mobile is-small'
+              href={resume}
+              download
+            >
+              <span className='icon'>
+                <FaFileDownload size='fa-2x' />
+              </span>
+              <span>Resume</span>
             </a>
             <a
               className='button is-link slide-in-btn is-size-7-mobile is-small'

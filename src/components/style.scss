@@ -92,7 +92,7 @@ html {
   height: 100vh;
 }
 
-.slide-in-btns-row a:last-child {
+.slide-in-btns-row a:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -104,6 +104,10 @@ html {
 
 .slide-in-btn:first-child {
   transform: translateX(-3rem);
+}
+
+.slide-in-btn:nth-child(2) {
+  transform: translateX(-4rem);
 }
 
 .slide-in-btn:last-child {
