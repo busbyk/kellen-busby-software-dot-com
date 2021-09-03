@@ -2,7 +2,7 @@ import React from 'react'
 import Typist from 'react-typist'
 import {FaGithub, FaFileDownload} from 'react-icons/fa'
 import {RiMailSendFill} from 'react-icons/ri'
-import profileImg from '../images/profile_1.jpg'
+import profileImg from '../images/headshot_square.jpg'
 import resume from '../../static/Kellen Busby Resume.pdf'
 
 const Welcome = () => {
