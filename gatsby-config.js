@@ -27,7 +27,6 @@ module.exports = {
         theme_color: '#2980b9',
         display: 'standalone',
         icon: 'src/images/favicon-16x16.png',
-        orientation: 'portrait',
       },
     },
     `gatsby-plugin-sass`,
