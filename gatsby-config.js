@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Kellen Busby Software',
@@ -31,5 +35,12 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: process.env.GTM_ID,
+        enableWebVitalsTracking: true,
+      },
+    },
   ],
 }
